@@ -1,9 +1,10 @@
 Package: firstlib.Diane
-Title: What the Package Does (One Line, Title Case)
+Title: Premier package avec R
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Diane", "ANATO", , "dianeanato1@gmail.com", role = c("aut", "cre"))
+Description:  Créer un package nous permettant de fournir des outils d’analyses 
+des données de trajets vélos sur Nantes.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
