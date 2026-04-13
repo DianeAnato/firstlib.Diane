@@ -3,10 +3,16 @@ Title: Premier package avec R
 Version: 0.0.0.9000
 Authors@R: 
     person("Diane", "ANATO", , "dianeanato1@gmail.com", role = c("aut", "cre"))
-Description:  Créer un package nous permettant de fournir des outils d’analyses 
-des données de trajets vélos sur Nantes.
+Description: Créer un package nous permettant de fournir des outils d’analyses des données de trajets vélos sur Nantes.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Depends: 
+    R (>= 3.5)
+LazyData: true
+Imports: 
+    dplyr,
+    forcats,
+    ggplot2
