@@ -26,23 +26,15 @@ data("df_velo")
 head(df_velo)
 ```
 
-Filtrage des boucles
+##Filtrage des boucles
 ```{r}
 trajet_filtre <- filtrer_trajet(df_velo, boucle = c("880", "881"))
 head(trajet_filtre)
 ```
 
 
-Visualisation
+##Visualisation
 ```{r}
-trajet_filtre |>
-  count(`Numéro de boucle`) |>
-  ggplot(aes(x = `Numéro de boucle`, y = n)) +
-  geom_col() +
-  labs(
-    title = "Nombre d'observations par boucle",
-    x = "Boucle",
-    y = "Effectif"
-  )
+plot_distribution_semaine(trajet_filtre)
 ```
 
