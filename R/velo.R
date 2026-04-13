@@ -144,3 +144,23 @@ plot_distribution_semaine <- function(trajet) {
 #'   \item{Probabilité de présence d'anomalies}{Indicateur d'anomalie}
 #' }
 "df_velo"
+
+
+#' Filtrer les trajets par numéro de boucle
+#'
+#' Cette fonction permet de sélectionner uniquement les lignes
+#' correspondant à une ou plusieurs boucles dans un jeu de données.
+#'
+#' @param trajet Un data.frame contenant les données de trajets.
+#' @param boucle Un vecteur de numéros de boucle à conserver.
+#'
+#' @return Un data.frame filtré sur les boucles sélectionnées.
+#' @export
+#'
+#' @examples
+#' filtrer_trajet(trajet = df_velo, boucle = c("880", "881"))
+filtrer_trajet <- function(trajet, boucle) {
+  trajet |>
+    dplyr::filter(`Numéro de boucle` %in% boucle)
+}
+
