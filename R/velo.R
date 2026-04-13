@@ -78,7 +78,12 @@ trouver_trajet_max <- function(trajet){
 #'  data(df_small)
 #' calcul_distribution_semaine(df_small)
 #'
-calcul_distribution_semaine <- function(trajet){
+calcul_distribution_semaine <- function(trajet, filtre){
+  if (filtre== TRUE) {
+    trajet <- trajet |>
+      filtre_anomalie()
+  }
+
   trajet |>
     dplyr::count(`Jour de la semaine`, wt = Total, sort = TRUE, name = "trajets")
 }

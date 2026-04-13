@@ -4,7 +4,7 @@
 \alias{calcul_distribution_semaine}
 \title{Les trajets par semaine}
 \usage{
-calcul_distribution_semaine(trajet)
+calcul_distribution_semaine(trajet, filtre)
 }
 \arguments{
 \item{trajet}{A data.frame}
