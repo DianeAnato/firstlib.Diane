@@ -78,7 +78,7 @@ trouver_trajet_max <- function(trajet){
 #'  data(df_small)
 #' calcul_distribution_semaine(df_small)
 #'
-calcul_distribution_semaine <- function(trajet, filtre){
+calcul_distribution_semaine <- function(trajet, filtre=TRUE){
   if (filtre== TRUE) {
     trajet <- trajet |>
       filtre_anomalie()
